@@ -59,32 +59,27 @@ const App = () => {
         <h2>Select multiple files - simple styling example</h2>
       </div>
       <p>&nbsp;</p>
-      <form onSubmit={handleSubmit(onSubmitFn)}>
-        <div>
-          <label htmlFor="avatar">Select a Photo</label>
-          <input
-            type="file"
-            id="avatar"
-            name="avatar"
-            multiple
-            ref={fileInput}
-          />
+      <form>
+        <div className="input-group col-md-12">
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="inputGroupFileAddon01">
+              Upload
+            </span>
+          </div>
+          <div className="custom-file">
+            <input
+              type="file"
+              className="custom-file-input"
+              id="inputGroupFile01"
+              aria-describedby="inputGroupFileAddon01"
+              multiple
+              onChange={e => onChangeFn(e)}
+            />
+            <label className="custom-file-label" htmlFor="inputGroupFile01">
+              {displayWords}
+            </label>
+          </div>
         </div>
-
-        <div>
-          <label htmlFor="firstName">First Name</label>
-          <input
-            type="text"
-            placeholder="First Name"
-            className="form-control"
-            name="firstName"
-            id="firstName"
-            ref={register({ required: true, maxLength: 80 })}
-          />
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
       </form>
     </>
   );
