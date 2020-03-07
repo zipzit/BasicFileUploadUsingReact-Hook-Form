@@ -12,3 +12,6 @@ I understand from the React documentation that because <input type="file" /> gen
 See https://reactjs.org/docs/uncontrolled-components.html
 
 For my proposal, I chose NOT to use onChange() (as recommended in issues 127, 274), but instead go with the React recommended `ref` technique. 
+
+Screen shot attached... 
+![alt](Bootstrap Multi Select.png)
