@@ -14,4 +14,5 @@ See https://reactjs.org/docs/uncontrolled-components.html
 For my proposal, I chose NOT to use onChange() (as recommended in issues 127, 274), but instead go with the React recommended `ref` technique. 
 
 Screen shot attached... 
-![alt](Bootstrap Multi Select.png)
+
+![](https://github.com/zipzit/BasicFileUploadUsingReact-Hook-Form/blob/master/Bootstrap%20Multi%20Select.png)
