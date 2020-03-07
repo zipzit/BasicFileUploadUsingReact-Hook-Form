@@ -54,7 +54,11 @@ const App = () => {
 
   return (
     <>
-      <h2>Basic Example of File Upload, using React.createRef</h2>
+       <div className="AppClass">
+        <h1>Bootstrap Form</h1>
+        <h2>Select multiple files - simple styling example</h2>
+      </div>
+      <p>&nbsp;</p>
       <form onSubmit={handleSubmit(onSubmitFn)}>
         <div>
           <label htmlFor="avatar">Select a Photo</label>
